@@ -26,7 +26,7 @@ router.get('/', function(req, res) {
 app.use(router);
 app.use('/api',Productos);
 
-mongoose.connect('mongodb://localhost/dbCarrito', function(err,res){
+mongoose.connect('mongodb://admin:1111@ds021999.mlab.com:21999/db_carrito', function(err,res){
 	if (err){
 		console.log('ERROR: No se pudo conectar a la base de datos' + err);
 	}
