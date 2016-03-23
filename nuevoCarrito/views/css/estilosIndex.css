@@ -1,0 +1,132 @@
+#h1{
+    font-family: Arial;
+    font-size: 35px;
+    color: black;
+    text-align:center;
+}
+
+
+header.img{
+    background-image: url("img/header.png");
+    background-position: right top;
+    background-repeat: none;
+}
+
+ul.encabezado{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #64BBE9;
+}
+ul.barraNavegacion{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0B7AA6;
+}
+
+
+ul.listaProductos{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    text-align: right;
+    overflow: hidden;
+    background-color: #0B7AA6;
+}
+
+li {
+    float: left;
+}
+img {
+    float: left;
+    width: 150px;
+    height: 60px;
+
+}
+ul img{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #214A84;
+
+}
+
+
+div.input{
+    background-position: center;
+}
+input.posicionInput {
+  position: absolute;
+  top: 60px;
+  left: 550px; 
+  
+}
+label.posicionLabel{
+    position: absolute;
+    top: 64px;
+    left: 500px;
+}
+#input {
+
+  display: inline;
+  box-sizing: content-box;
+  padding: 2px 126px 2px 18px;
+  border: 1px solid #b7b7b7;
+  border-radius: 3px;
+  font: normal 16px/normal "Times New Roman", Times, serif;
+  color: rgba(0,0,0,1);
+  text-overflow: clip;
+  background: rgba(252,252,252,1);
+  
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+
+#columna_izq{
+float:left;
+width:20%;
+height: auto;
+margin-top:20px;
+border: 1px solid;
+}
+
+#columna_der{
+float:right;
+width:39.7%;
+height: auto;
+margin-top: 20px;
+border: 1px solid;
+
+}
+
+#seccion{
+float:center;
+width:60%;
+margin-top:20px;
+height: auto;
+border: 1px solid;
+}
+
+.active{
+  background-color: #214A84; 
+}
+

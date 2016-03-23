@@ -1,0 +1,75 @@
+<!doctype html>
+<html ng-app="mainApp">
+<head>
+<title>Productos</title>
+
+<link href="../views/css/estilos.css" rel="stylesheet" type="text/css">
+<link async href="http://fonts.googleapis.com/css?family=Advent%20Pro" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+
+
+</head>
+
+<body  ng-controller="productController" >
+
+<header id="cabezera"><img src="../views/img/header.png" width="999" height="183" alt=""/></header>
+<nav id="menu"><ul><li>inicio</li>  <li>productos</li><li>productos2</li><li>Registro</li><li>MIcarrito!!</li>
+
+</ul>
+</nav>
+
+<aside id="columna">
+<h1>Carrito</h1>
+
+<div id="contenedorcarrito" ng-repeat="producto in newproducto ">
+
+<div> <img   ng-src="{{producto.imagen}}">
+   <h1> {{ producto.nombre }}</h1>
+        <p>{{ producto.precio}}</p>
+        <p>{{producto.cantidad}}</p>
+        <input type="text" ng-model="nuevacantidad">
+        <button ng-click="agregarcantidad(producto)">agregarcantidad</button>
+
+
+
+</div>
+</div>
+</aside>
+<section id="seccion">
+<article id="article1">
+<header id="filtro"> filtros <input type="text" placeholder="Buscar Producto" ng-model="buscar">           </header>
+<table>
+<tr>
+ <td width="351"><a href="" ng-click="ordenarPor('nombre')">Nombre</a></td>
+
+
+</tr>
+</table>
+
+</article>
+<article id="articulo1">
+  <table class="table table-striped">
+     <tr ng-repeat="producto in productos | orderBy:ordenSeleccionado  | filter:buscar"  >
+
+         <td id="contenedorimg" > <img   ng-src="{{producto.imagen}}"></td>
+        <td id="contenedorarticulo"> <h1>{{producto.nombre}}</h1>
+                 <p>{{producto.descripcion}}</p><br>
+                {{ producto.precio | currency}}
+
+        </td>
+         <td><button id="boton" value="Botón normal"  ng-click="selectProducto(producto)"  >  </button></td>
+
+    </tr>
+</table>
+
+
+
+</article>
+
+
+
+</section>
+<footer id="pie">Colocar aquí el contenido para  id "pie"</footer>
+<script src="/server/controllers/angular.min.js"></script>
+<script src="/server/controllers/main.js"></script>
+</body>
+</html>

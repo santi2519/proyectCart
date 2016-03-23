@@ -6,7 +6,6 @@ exports.mostrarProductos = function(req,res){
           if(err){
           	return res.send(500,err.message);
           }
-          console.log('GET /productos');
           res.status(200).jsonp(productos);
 	});
 }
@@ -16,15 +15,11 @@ exports.mostrarUnProducto = function(req,res){
         if(err){
         	return res.send(500,err.message);
         }
-        console.log('GET /producto' + req.params.name);
         res.status(200).jsonp(producto);
       });
 }
 
 exports.agregarProducto = function(req,res){
-	 console.log('POST');
-	 console.log(req.body);
-
      nuevoProducto = new Producto({
           Nombre: req.body.Nombre,
           Precio: req.body.Precio,
