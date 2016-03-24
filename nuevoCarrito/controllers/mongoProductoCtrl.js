@@ -11,7 +11,7 @@ exports.mostrarProductos = function(req,res){
 }
 
 exports.mostrarUnProducto = function(req,res){
-      Producto.findOne(req.params.name,function(err,producto){
+      Producto.findOne(req.params.Nombre,function(err,producto){
         if(err){
         	return res.send(500,err.message);
         }
