@@ -1,0 +1,149 @@
+@charset "utf-8";
+#cabezera {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top-left-radius: 0px;
+}
+#seccion {
+	width: 850px;
+	margin-top: 50px;
+	border: 1px solid;
+	margin-left:30px;
+	padding-left: 50px;
+	margin-bottom:100px;
+}
+
+body{
+	
+}
+caption {
+	width:40px;
+  
+  color: #777;
+  text-align: left;
+  float:right;
+}
+
+
+
+#pie{
+	float:both;
+	}
+
+
+
+
+#menu{
+	width: 1000px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #B3B3B3;
+	clear: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+#menu ul li {
+	
+	list-style: none;
+	float: left;
+	margin-right: auto;
+	margin-top: 0px;
+	font-family: "Source Sans Pro";
+	font-weight: normal;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	margin-left: auto;
+	text-align: center;
+	width: 16%;
+	transition: all 0.3s linear;
+}
+
+#menu ul li:hover {
+	color: #717070;
+	cursor: pointer;
+}
+
+#columna {
+	margin-top: 50px;
+	float: right;
+	right: auto;
+	width: 400px;
+	border: 1px solid;
+	margin-bottom:100px;
+
+}
+
+td img {
+	margin-bottom: 80px;
+}
+
+ #contenedorimg {
+     margin-left: 100px;
+     border: 1px solid;
+     width: 50px;
+     text-align: center;
+ }
+
+#contenedorarticulo {
+text-align: center;
+   border: 1px solid;
+width: 70px;
+ }
+
+#contenedorcarrito{
+	text-align: center;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding-bottom: 2px;
+	border: 1px solid;
+}
+
+h1{
+   font-size: 30px; 
+ margin:0px 0px 10px 0;
+ line-height: 14px; 
+ font-family:Arial, Helvetica;
+text-align: center;
+ color: black; 
+
+}
+
+#boton{
+	
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 250px;
+  height: 70px;
+  cursor: pointer;
+  margin: 0 auto;
+  border: 2px solid rgb(30,205,151);
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  font: normal 37px/70px "Advent Pro", Helvetica, sans-serif;
+  color: rgb(30, 205, 151);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  letter-spacing: 1px;
+  background: rgba(0,0,0,0);
+  -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+}
+
+#boton:hover {
+  color: rgba(255,255,255,1);
+  background: rgb(30, 205, 151);
+}
+
+#boton:active {
+  border: 2px solid rgba(33,224,163,1);
+  background: rgba(33,224,163,1);
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
